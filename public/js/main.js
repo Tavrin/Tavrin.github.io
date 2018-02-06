@@ -20,7 +20,7 @@ $.when( $.ready ).then(function() {
 
     $("#work-link").click( function(){
         $('html, body').animate({
-            scrollTop: $("#my-work").offset().top}, 2000);
+            scrollTop: $("#work").offset().top}, 2000);
     });
     
     // theatherMode()
