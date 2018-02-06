@@ -137,6 +137,10 @@ h1
     #landing-container{
         margin-top: 0 !important;
     }
+    #row-work{
+        max-width:100%;
+        margin: 0;
+    }
     
 }
 
