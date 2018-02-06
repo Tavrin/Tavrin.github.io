@@ -104,6 +104,10 @@ h1
     padding-top: 5%;
 }
 @media(max-width:720px){
+    .container-fluid{
+        height: 600px;
+        padding: 0;
+    }
     .landing-image{
         background-image: url(../img/Snapchat-849821326.jpg);
     }
@@ -130,6 +134,9 @@ h1
         font-size: 1.35rem;
         padding-bottom: 10%;
     }
+    .work-right{
+        height: 202.5px;
+    }
     #heading-first{
         font-size: 2.50rem;
         font-weight: 600;
@@ -137,9 +144,20 @@ h1
     #landing-container{
         margin-top: 0 !important;
     }
+    #about{
+        margin-bottom: 50% !important;
+    }
+    #work{
+        height: 800px;
+        padding-top: 35%;
+    }
     #row-work{
         max-width:100%;
         margin: 0;
+    }
+    #work-title{
+        font-size: 1.50rem;
+        margin-top: 1rem !important;
     }
     
 }

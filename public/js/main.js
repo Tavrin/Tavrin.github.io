@@ -35,20 +35,20 @@ $.when( $.ready ).then(function() {
 $('#carouselExampleIndicators').on('slid.bs.carousel', function () {
     if($("#first-image").hasClass("active")){
           $("#work-content").empty();
-          $("#work-content").append("<p>Test 1</p>");
+          $("#work-content").append("Test 1");
       }
 
       if($("#second-image").hasClass("active")){
         $("#work-content").empty();
-        $("#work-content").append("<p>Test 2</p>");
+        $("#work-content").append("Test 2");
     }
     if($("#third-image").hasClass("active")){
         $("#work-content").empty();
-        $("#work-content").append("<p>Test 3</p>");
+        $("#work-content").append("Test 3");
     }
     if($("#fourth-image").hasClass("active")){
         $("#work-content").empty();
-        $("#work-content").append("<p>Test 4</p>");
+        $("#work-content").append("Test 4");
     }
 
     
