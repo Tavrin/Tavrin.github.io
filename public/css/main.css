@@ -155,6 +155,8 @@ h1
         height: 350px;
     }
     #heading-first{
+        font-family: Montserrat;
+       color:  #f73b3b;
         font-size: 2.50rem;
         font-weight: 600;
     }
