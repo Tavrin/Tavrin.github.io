@@ -34,13 +34,19 @@ $.when( $.ready ).then(function() {
 
 $('#carouselExampleIndicators').on('slid.bs.carousel', function () {
     if($("#first-image").hasClass("active")){
+        $(".work-right").css({"transition-duration:" : " 0.3s", "background" : "#1BA2C8"})
+        $("#work-title").empty(); 
+        $("#work-title").append("My Work");
           $("#work-content").empty();
-          $("#work-content").append("Test 1");
+          $("#work-content").append("You can see on the slideshow on the left several of the projects that i've done already, using different technologies that i learned through time.<br><br>But Web development and design doesnt stop at the code and the languages or frameworks used, the design and aesthetic is equally as important.<br><br> This is what i will try to also showcase in those examples.");
       }
 
       if($("#second-image").hasClass("active")){
+          $(".work-right").css({"transition-duration:" : " 0.3s", "background" : "#D3493F"})
+        $("#work-title").empty(); 
+        $("#work-title").append("Quizzymaths");
         $("#work-content").empty();
-        $("#work-content").append("Test 2");
+        $("#work-content").append("This was a cognitive psychology project where the goal was to make maths exercises for kids in primary school. But my personal goal aside of that was to make a colored website that was pleasing to look at and would excite the imagination.");
     }
     if($("#third-image").hasClass("active")){
         $("#work-content").empty();
