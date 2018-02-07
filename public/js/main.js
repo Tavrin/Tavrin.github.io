@@ -38,7 +38,7 @@ $('#carouselExampleIndicators').on('slid.bs.carousel', function () {
         $("#work-title").empty(); 
         $("#work-title").append("My Work");
           $("#work-content").empty();
-          $("#work-content").append("You can see on the slideshow on the left several of the projects that i've done already, using different technologies that i learned through time.<br><br>But Web development and design doesnt stop at the code and the languages or frameworks used, the design and aesthetic is equally as important.<br><br> This is what i will try to also showcase in those examples.");
+          $("#work-content").append("On the left are several projects that I have worked on already.<br><br>But Web development doesnt stop at the code and the languages or frameworks used.<br><br>The design and aesthetic is equally as important, and this is what I will try to also showcase in those examples.");
       }
 
       if($("#second-image").hasClass("active")){
@@ -46,7 +46,7 @@ $('#carouselExampleIndicators').on('slid.bs.carousel', function () {
         $("#work-title").empty(); 
         $("#work-title").append("Quizzymaths");
         $("#work-content").empty();
-        $("#work-content").append("This was a cognitive psychology project where the goal was to make maths exercises for kids in primary school. But my personal goal aside of that was to make a colored website that was pleasing to look at and would excite the imagination.");
+        $("#work-content").append("This was a cognitive psychology project where the goal was to make maths exercises for kids in primary school. <br><br>But my personal goal aside of that was to make a colored website that was pleasing to look at and would excite the imagination.<br> The website components were created in Illustrator. <br><br>As for the website, at first it was static and only used Bootstrap as a framework and some Javascript, but then I made a signup and login system using PHP and a MYSQL database");
     }
     if($("#third-image").hasClass("active")){
         $("#work-content").empty();
