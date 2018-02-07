@@ -75,13 +75,11 @@ $('#carouselExampleIndicators').on('slid.bs.carousel', function () {
         $(document).scroll(function() { 
            scroll_start = $(this).scrollTop();
            if(scroll_start > offset.top && scroll_start < offset2.top) {
-            console.log(scroll_start);
                $('.navbar-brand').css("color", "#0F1018");
                $('#navbar-example2').css({'background-color': '#FFFFFF'});
                $('.nav-link').removeClass('nav-links-1').addClass('nav-links-2');
             } 
             else if(scroll_start > offset2.top){
-                console.log("test2");
                 $('.navbar-brand').css("color", "#FFFFFF");
                $('#navbar-example2').css({'background-color': '#0F1018'});
                $('.nav-link').removeClass('nav-links-2').addClass('nav-links-1');
