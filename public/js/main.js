@@ -4,9 +4,6 @@ $.when( $.ready ).then(function() {
   // Run code
 
 
-        console.log("test");
-        $( ".backimage" ).fadeIn( "slow", function() {
-          });
    
      $('body').scrollspy({ target: '#navbar-example2' });
      
