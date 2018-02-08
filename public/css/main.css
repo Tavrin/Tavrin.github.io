@@ -121,6 +121,7 @@ h1
    color: rgb(243, 242, 255);
    font-family: Etna;
    font-weight: 500;
+   padding-top: 8%;
 }
 
 #landing-name{
@@ -133,7 +134,7 @@ h1
     }
     .landing-image{
         /* background-image: url(../img/Snapchat-849821326.jpg); */
-        background: #191919; 
+        background: black;; 
     }
     .landing-image h1{
         color:#CF1C26;
@@ -169,6 +170,7 @@ h1
     }
     #landing-container{
         margin-top: 0 !important;
+        min-height: 812px;
     }
     #about{
         margin-bottom: 50% !important;
