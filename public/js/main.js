@@ -22,9 +22,17 @@ $.when( $.ready ).then(function() {
             scrollTop: $("#work").offset().top}, 2000);
     });
 
-    $("#cv-link").click( function(){
+    $("#skills-link").click( function(){
         $('html, body').animate({
-            scrollTop: $("#my-cv").offset().top}, 2000);
+            scrollTop: $("#skills").offset().top -100}, 2000);
+    });
+    $("#educ-link").click( function(){
+        $('html, body').animate({
+            scrollTop: $("#education").offset().top -100}, 2000);
+    });
+    $("#contact-link").click( function(){
+        $('html, body').animate({
+            scrollTop: $("#contact").offset().top}, 2000);
     });
     
     // theatherMode()
