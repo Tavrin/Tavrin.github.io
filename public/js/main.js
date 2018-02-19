@@ -51,31 +51,45 @@ $.when( $.ready ).then(function() {
         let currentSlide = $(".carousel-indicators .active").data('slide-to');
         if(e.which == 37){
             if (currentSlide == 0){
-                slide3();
-            }
-            else if(currentSlide == 1){
                 slide0();
             }
-            else if(currentSlide == 2){
+            else if(currentSlide == 1){
+                
                 slide1();
             }
-            else if(currentSlide == 3){
+            else if(currentSlide == 2){
+                
                 slide2()
+            }
+            else if(currentSlide == 3){
+                
+                slide3()
+            }
+            else if(currentSlide == 4){
+                
+                slide4();
             }
         }
 
         if(e.which == 39){
             if (currentSlide == 0){
-                slide1();
+                slide0()
+                
             }
             else if(currentSlide == 1){
-                slide2();
+                slide1()
+               ;
             }
             else if(currentSlide == 2){
-                slide3();
+                slide2()
+                
             }
             else if(currentSlide == 3){
-                slide0()
+                slide3();
+               
+            }
+            else if(currentSlide == 4){
+                slide4()
             }
         }
 
@@ -85,7 +99,7 @@ $.when( $.ready ).then(function() {
         console.log(event.target.className);
         let currentSlide = $(".carousel-indicators .active").data('slide-to');
         if (currentSlide == 0){
-            slide3();
+            slide4();
         }
         else if(currentSlide == 1){
             slide0();
@@ -95,6 +109,9 @@ $.when( $.ready ).then(function() {
         }
         else if(currentSlide == 3){
             slide2()
+        }
+        else if(currentSlide == 4){
+            slide3()
         }
     })
     $(".carousel-control-next").on("click", function(event){
@@ -110,6 +127,9 @@ $.when( $.ready ).then(function() {
             slide3();
         }
         else if(currentSlide == 3){
+            slide4()
+        }
+        else if(currentSlide == 4){
             slide0()
         }
     })
@@ -229,4 +249,12 @@ function slide0(){
     $("#work-title").append("Restaurant Website");
     $("#work-content").empty();
     $("#work-content").append("I worked alongside someone that had to do a website for a French Italian restaurant that is themed about the series The Sopranos.<br><br> While our vision of how the website should look and feel differed, I helped on alot of aspects that the other person didnt know well (Logo creation, overall ergonomy, Typography etc.)<br><br>But I also did my own version of the website as showcase material.");
+  }
+
+  function slide4(){
+    $(".work-right").css({"transition-duration:" : " 0.3s", "background" : "#222233"})
+    $("#work-title").empty(); 
+    $("#work-title").append("DotaTracker");
+    $("#work-content").empty();
+    $("#work-content").append("A web app that tracks the current top live games, and can also look for players data to show a player profile. <div ><a style=\"font-size: 1rem !important\" href=\"https://github.com/Tavrin/DotaTracker\" class=\"icon-contact\">Github Link <i class=\"fab fa-github\"></i></a></div>");
   }
