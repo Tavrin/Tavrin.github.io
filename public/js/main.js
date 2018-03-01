@@ -51,45 +51,45 @@ $.when( $.ready ).then(function() {
         let currentSlide = $(".carousel-indicators .active").data('slide-to');
         if(e.which == 37){
             if (currentSlide == 0){
-                slide0();
+                slide4();
             }
             else if(currentSlide == 1){
                 
-                slide1();
+                slide0();
             }
             else if(currentSlide == 2){
                 
-                slide2()
+                slide1()
             }
             else if(currentSlide == 3){
                 
-                slide3()
+                slide2()
             }
             else if(currentSlide == 4){
                 
-                slide4();
+                slide3();
             }
         }
 
         if(e.which == 39){
             if (currentSlide == 0){
-                slide0()
+                slide1()
                 
             }
             else if(currentSlide == 1){
-                slide1()
+                slide2()
                ;
             }
             else if(currentSlide == 2){
-                slide2()
+                slide3()
                 
             }
             else if(currentSlide == 3){
-                slide3();
+                slide4();
                
             }
             else if(currentSlide == 4){
-                slide4()
+                slide0()
             }
         }
 
