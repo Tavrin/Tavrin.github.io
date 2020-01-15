@@ -51,7 +51,7 @@ $.when( $.ready ).then(function() {
         let currentSlide = $(".carousel-indicators .active").data('slide-to');
         if(e.which == 37){
             if (currentSlide == 0){
-                slide4();
+                slide5();
             }
             else if(currentSlide == 1){
                 
@@ -68,6 +68,9 @@ $.when( $.ready ).then(function() {
             else if(currentSlide == 4){
                 
                 slide3();
+            }
+            else if(currentSlide == 5){
+                slide4()
             }
         }
 
@@ -89,6 +92,9 @@ $.when( $.ready ).then(function() {
                
             }
             else if(currentSlide == 4){
+                slide5()
+            }
+            else if(currentSlide == 5){
                 slide0()
             }
         }
@@ -99,7 +105,8 @@ $.when( $.ready ).then(function() {
         console.log(event.target.className);
         let currentSlide = $(".carousel-indicators .active").data('slide-to');
         if (currentSlide == 0){
-            slide4();
+            console.log("<" + currentSlide)
+            slide5();
         }
         else if(currentSlide == 1){
             slide0();
@@ -113,11 +120,15 @@ $.when( $.ready ).then(function() {
         else if(currentSlide == 4){
             slide3()
         }
+        else if(currentSlide == 5){
+            slide4()
+        }
     })
     $(".carousel-control-next").on("click", function(event){
         console.log(event.target.className)
         let currentSlide = $(".carousel-indicators .active").data('slide-to');
         if (currentSlide == 0){
+            console.log(currentSlide + " >")
             slide1();
         }
         else if(currentSlide == 1){
@@ -130,6 +141,9 @@ $.when( $.ready ).then(function() {
             slide4()
         }
         else if(currentSlide == 4){
+            slide5()
+        }
+        else if(currentSlide == 5){
             slide0()
         }
     })
@@ -255,6 +269,14 @@ function slide0(){
     $(".work-right").css({"transition-duration:" : " 0.3s", "background" : "#222233"})
     $("#work-title").empty(); 
     $("#work-title").append("DotaTracker");
+    $("#work-content").empty();
+    $("#work-content").append("A web app that tracks the current top live games, and can also look for players data to show a player profile. <div ><a style=\"font-size: 1rem !important\" href=\"https://github.com/Tavrin/DotaTracker\" class=\"icon-contact\">Github Link <i class=\"fab fa-github\"></i></a></div>");
+  }
+
+  function slide5(){
+    $(".work-right").css({"transition-duration:" : " 0.3s", "background" : "#404050"})
+    $("#work-title").empty(); 
+    $("#work-title").append("Christine and Cie");
     $("#work-content").empty();
     $("#work-content").append("A web app that tracks the current top live games, and can also look for players data to show a player profile. <div ><a style=\"font-size: 1rem !important\" href=\"https://github.com/Tavrin/DotaTracker\" class=\"icon-contact\">Github Link <i class=\"fab fa-github\"></i></a></div>");
   }
