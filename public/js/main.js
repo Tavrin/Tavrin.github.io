@@ -105,8 +105,7 @@ $.when( $.ready ).then(function() {
         console.log(event.target.className);
         let currentSlide = $(".carousel-indicators .active").data('slide-to');
         if (currentSlide == 0){
-            console.log("<" + currentSlide)
-            slide5();
+            slide6();
         }
         else if(currentSlide == 1){
             slide0();
@@ -123,7 +122,12 @@ $.when( $.ready ).then(function() {
         else if(currentSlide == 5){
             slide4()
         }
+        else if(currentSlide == 6){
+            slide5()
+        }
     })
+
+
     $(".carousel-control-next").on("click", function(event){
         console.log(event.target.className)
         let currentSlide = $(".carousel-indicators .active").data('slide-to');
@@ -144,33 +148,17 @@ $.when( $.ready ).then(function() {
             slide5()
         }
         else if(currentSlide == 5){
+            slide6()
+        }
+        else if(currentSlide == 6){
             slide0()
         }
     })
 
 
-// $('#carouselExampleIndicators').on('slide.bs.carousel', function () {
-// //   console.log($(".carousel-control-prev").data('slide'))
-// //   console.log($(".carousel-control-next").data('slide'))
-//     // console.log(carousel.direction);
-//     if($("#first-image").hasClass("active")){
-//         slide0()
-//       }
-//     //   #1BA2C8
-//     //   "#D3493F"
-//     if($("#second-image").hasClass("active")){
-//         slide1()
-//     }
-//     if($("#third-image").hasClass("active")){
-//         slide2()
-//     }
-//     if($("#fourth-image").hasClass("active")){
-//         slide3()
-//     }
-
-    
-//       })
-
+function prevSlide(i){
+    slide(i,false)
+}
 
 
 
@@ -231,7 +219,7 @@ function changeNavbar(){
 
 
 
-   
+
 function slide0(){
     $(".work-right").css({"transition-duration:" : " 0.3s", "background" : "#2A9E43"})
     $("#work-title").empty(); 
@@ -270,13 +258,20 @@ function slide0(){
     $("#work-title").empty(); 
     $("#work-title").append("DotaTracker");
     $("#work-content").empty();
-    $("#work-content").append("A web app that tracks the current top live games, and can also look for players data to show a player profile. <div ><a style=\"font-size: 1rem !important\" href=\"https://github.com/Tavrin/DotaTracker\" class=\"icon-contact\">Github Link <i class=\"fab fa-github\"></i></a></div>");
+    $("#work-content").append("A web app that tracks the current top live games, and can also look for players data to show a player profile.");
   }
 
   function slide5(){
+    $(".work-right").css({"transition-duration:" : " 0.3s", "background" : "#675E7C"})
+    $("#work-title").empty(); 
+    $("#work-title").append("Joe Allen Paris");
+    $("#work-content").empty();
+    $("#work-content").append("A restaurant in Paris");
+  }
+  function slide6(){
     $(".work-right").css({"transition-duration:" : " 0.3s", "background" : "#404050"})
     $("#work-title").empty(); 
     $("#work-title").append("Christine and Cie");
     $("#work-content").empty();
-    $("#work-content").append("A web app that tracks the current top live games, and can also look for players data to show a player profile. <div ><a style=\"font-size: 1rem !important\" href=\"https://github.com/Tavrin/DotaTracker\" class=\"icon-contact\">Github Link <i class=\"fab fa-github\"></i></a></div>");
+    $("#work-content").append("A company that focuses on coaching");
   }
